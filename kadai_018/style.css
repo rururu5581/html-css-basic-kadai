@@ -1,0 +1,99 @@
+/* ページ全体のスタイル */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* ===== Step3: 一番上の図形のデザイン ===== */
+
+/* #top のスタイル */
+#top {
+  width: 800px; /* 横幅を800px */
+  background-color: #dcc9f4; /* 背景色 */
+  margin: 20px auto; /* 上下20pxの余白を入れて中央配置 */
+  display: flex; /* 子要素を横並びにする */
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center; /* 垂直方向の中央揃え */
+  padding: 20px 0; /* 内側の余白 */
+}
+
+/* .top-child のスタイル */
+.top-child {
+  width: 20%; /* 親要素の20%の横幅 */
+  background-color: #ffd9df; /* 背景色 */
+  text-align: center; /* 文字を中央揃え */
+  padding: 10px; /* 内側の余白 */
+  margin: 0 10px; /* 要素同士の間隔を調整 */
+}
+
+/* ===== Step4: 真ん中の図形のデザイン ===== */
+
+/* #middle のスタイル */
+#middle {
+  width: 800px; /* 横幅を800px */
+  height: 800px; /* 高さを800px */
+  background-color: #ffd9df; /* 背景色 */
+  margin: 20px auto; /* 上下20pxの余白を入れて中央配置 */
+  position: relative; /* 子要素の絶対配置の基準 */
+}
+
+/* middle-child の共通スタイル */
+#middle-child01, #middle-child02, #middle-child03 {
+  width: 200px; /* 横幅を200px */
+  height: 200px; /* 高さを200px */
+  background-color: #87ceeb; /* 背景色 */
+  position: absolute; /* 親要素 #middle を基準に配置 */
+}
+
+/* middle-child の配置 */
+#middle-child01 {
+  top: 100px;
+  left: 100px;
+}
+
+#middle-child02 {
+  top: 300px;
+  left: 300px;
+}
+
+#middle-child03 {
+  top: 500px;
+  left: 500px;
+}
+
+/* ===== Step5: 一番下の図形のデザイン ===== */
+
+/* #bottom のスタイル */
+#bottom {
+  width: 800px;
+  height: 400px; /* 高さを400pxに修正 */
+  background-color: #87ceeb; /* 背景色を水色に */
+  margin: 20px auto;
+  position: relative;
+}
+
+/* bottom-child の共通スタイル */
+#bottom-child01, #bottom-child02, #bottom-child03 {
+  width: 400px;
+  height: 100px;
+  background-color: #e5dcf0; /* 紫色 */
+  position: absolute;
+}
+
+/* bottom-child の配置 */
+#bottom-child01 {
+  top: 100px; /* 位置を調整 */
+  left: 0px;
+}
+
+#bottom-child02 {
+  top: 200px; /* 位置を調整 */
+  left: 200px;
+}
+
+#bottom-child03 {
+  top: 300px; /* 位置を調整 */
+  left: 400px;
+}
